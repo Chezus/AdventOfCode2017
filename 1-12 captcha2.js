@@ -3,6 +3,6 @@ var sum = 0;
 
 for (var i = 0; i < captcha.length; i++) 
 { 
-    if(captcha[i] === captcha[(i+captcha.length/2)%captcha.length]) 
+    if(captcha[i] === captcha[(i + captcha.length / 2) % captcha.length]) 
         sum += +captcha[i];
 }
