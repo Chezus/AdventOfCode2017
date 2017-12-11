@@ -5,7 +5,6 @@ let input = fs.readFileSync("day9.input", "utf8");
 input = input.replace(/(!.)/g, "");
 input = input.replace(/(<[^>]*>)/g, "");
 input = input.replace(/(,)/g, "");
-// console.log(input);
 
 let stack = [];
 let answer = 0;
