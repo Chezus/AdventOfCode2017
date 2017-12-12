@@ -9,18 +9,22 @@ let linksArray = [];
 let groups = [];
 let group = [];
 
-function inGroup(index) {
+function inGroup(index)
+{
     for (grp of groups) {
-        if (grp.includes(index))
+        if (grp.includes(index)) {
             return true;
+        }
     }
 
     return false;
 }
 
-function createGroup(index) {
-    if (!group.includes(index))
+function createGroup(index)
+{
+    if (!group.includes(index)) {
         group.push(index);
+    }
 
     for (link of linksArray[index]) {
         if (!group.includes(link)) {
@@ -35,8 +39,9 @@ for (str of unprocessedInput) {
 }
 
 for (let i = 0; i < linksArray.length; i++) {
-    if (inGroup(i))
+    if (inGroup(i)) {
         continue;
+    }
     
     createGroup(i);
     groups.push(group);
