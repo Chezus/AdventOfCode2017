@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-let input = fs.readFileSync("test.input", "utf8");
+let input = fs.readFileSync("day19.input", "utf8");
 input = input.split("\n");
 
 let x = input[0].indexOf("|");
