@@ -27,11 +27,6 @@ class ComponentController {
         return this;
     }
 
-    removeComponent(component) {
-        this.components.splice(this.components.indexOf(component), 1);
-        return this;
-    }
-
     removeComponentByIndex(index) { 
         this.components.splice(index, 1);
         return this;
@@ -93,4 +88,3 @@ input.split("\n").map(function (str) {
 });
 
 console.log(buildBridge(0, new ComponentController(), components).calculateTotalWeight());
-
