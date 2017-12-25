@@ -3,7 +3,7 @@ const fs = require("fs");
 let input = fs.readFileSync("day22.input", "utf8");
 input = input.split("\n");
 let gridSize = 1000;
-let nodes = Array(gridSize).fill().map(() => Array(gridSize).fill(0));;
+let nodes = Array(gridSize).fill().map(() => Array(gridSize).fill(0));
 let numInfected = 0;
 let currX = Math.floor(gridSize / 2);
 let currY = Math.floor(gridSize / 2);
